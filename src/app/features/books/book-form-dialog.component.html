@@ -1,0 +1,35 @@
+<app-loading-spinner *ngIf="loadingService.isLoading$ | async"></app-loading-spinner>
+<h2 mat-dialog-title>{{dialogTitle}}</h2>
+<form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+  <mat-dialog-content>
+    <mat-form-field class="full-width">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" placeholder="Enter book name">
+      <mat-error *ngIf="bookForm.get('name')?.hasError('required')">
+        Name is required
+      </mat-error>
+      <mat-error *ngIf="bookForm.get('name')?.hasError('maxLength')">
+        Name length should not exceed 250 characters
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Categories</mat-label>
+      <mat-select formControlName="categoryIds" multiple>
+        <mat-option *ngFor="let category of categories" [value]="category.id">
+          {{category.name}}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="bookForm.get('categoryIds')?.hasError('required')">
+        At least one category is required
+      </mat-error>
+    </mat-form-field>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <button mat-button type="button" (click)="onCancel()">Cancel</button>
+    <button mat-raised-button color="primary" type="submit" [disabled]="bookForm.invalid">
+      {{submitButtonText}}
+    </button>
+  </mat-dialog-actions>
+</form>
