@@ -4,9 +4,9 @@ A modern web application built with Angular Material for managing books and thei
 
 ## Author: **Mohammad Alfayoume**
 
-## Time Estimation: 3 Days
+## Time Estimation: One Day
 
-## Actual Time: 3.5 Days
+## Actual Time: One Day
 
 ## Challenges faced
 * Switch between GitHub accounts
@@ -14,6 +14,90 @@ A modern web application built with Angular Material for managing books and thei
 ## AI Tools:
 * ChatGPT 4o
 * Copilot Claude Sonnet 3.5
+
+## Prompt
+```
+You are an expert Angular developer.
+Generate code for a library management system with the following specifications:
+
+Pages
+
+Books Page
+
+List of books with Angular Material table.
+
+Pagination included.
+
+Each book has: id, name, and categories.
+
+CRUD operations.
+
+For Create and Update, open a modal (Angular Material Dialog) with a form:
+
+name (text field).
+
+categories (multi-select dropdown populated from Categories).
+
+Categories Page
+
+List of categories with Angular Material table.
+
+Pagination included.
+
+Each category has: id, name.
+
+CRUD operations.
+
+For Create and Update, open a modal with a form:
+
+name (text field).
+
+DTOs
+
+For each entity (Book, Category) generate:
+
+Create DTO.
+
+Update DTO.
+
+Brief DTO (for list view).
+
+Services
+
+Generate Angular services that handle HTTP communication with backend (/api/books and /api/categories).
+
+Include methods for getAll, getById, create, update, and delete.
+
+Routing
+
+Add Angular routes:
+
+/books → BooksPageComponent.
+
+/categories → CategoriesPageComponent.
+
+Design
+
+Use Angular Material for table, pagination, buttons, dialogs, and form controls.
+
+I already installed it in the application. don't install it.
+
+Make UI clean and responsive.
+
+📌 Output should include:
+
+Angular components (BooksPage, CategoriesPage).
+
+Dialog components (BookFormDialog, CategoryFormDialog).
+
+Services.
+
+DTO definitions.
+
+Example routing module updates.
+
+Example module declarations for Material imports.
+```
 
 ## Features
 
@@ -98,3 +182,4 @@ src/
    - Utilize RxJS for state management
    - Implement proper error handling
    - Use loading indicators for async operations
+
