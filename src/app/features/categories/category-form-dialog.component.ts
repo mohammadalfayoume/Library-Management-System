@@ -91,7 +91,7 @@ export class CategoryFormDialogComponent {
           .subscribe({
             next: (resp) => {
                 this.successHandlerService.handleSuccess('Category updated successfully');
-                this.dialogRef.close(resp);
+                this.dialogRef.close('updated');
             },
             error: (err) => {
                 this.errorHandlerService.handleError(err);
