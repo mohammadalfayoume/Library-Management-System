@@ -183,3 +183,14 @@ src/
    - Implement proper error handling
    - Use loading indicators for async operations
 
+<img width="1898" height="819" alt="image" src="https://github.com/user-attachments/assets/b85f3368-6d8b-4831-afd8-cb3bcfd66e8a" />
+<img width="1895" height="785" alt="image" src="https://github.com/user-attachments/assets/8314c0de-394b-4051-92d6-db55482199c4" />
+<img width="780" height="678" alt="image" src="https://github.com/user-attachments/assets/85997d04-9b0a-42df-af36-adacb348e621" />
+<img width="786" height="502" alt="image" src="https://github.com/user-attachments/assets/594f2cfb-531a-4c8e-b0b5-b0abc41fd490" />
+<img width="1911" height="853" alt="image" src="https://github.com/user-attachments/assets/16d59061-507a-4134-a9cd-0379250be910" />
+<img width="899" height="487" alt="image" src="https://github.com/user-attachments/assets/b3a3ceed-1f35-4d5e-ab20-5f8f0b87a307" />
+<img width="1805" height="101" alt="image" src="https://github.com/user-attachments/assets/6a7b2af6-efba-49a2-a9be-64a2094a3a5f" />
+
+
+
+
